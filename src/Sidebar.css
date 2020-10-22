@@ -1,0 +1,26 @@
+.Sidebar{
+	display: flex;
+	flex-direction: column;
+	flex:0.35; /* it used for the side bar to take 35% of the width   */
+	background-color: #ffffff;
+	border-right: 1px solid lightgray;
+}
+
+
+.Sidebar_header{
+	display: flex;
+	justify-content: space-between;
+	padding:20px;
+	max-height: 20px;
+	background-color:#dcf8c6;
+}
+
+.Sidebar_chats{
+	overflow: scroll;
+	
+}
+
+.profileImg{
+	height: 30px;
+	width: 30px;
+}
