@@ -22,11 +22,12 @@ function Login(){
 	}
 	return(
 		<div className="login">
-		<div className="login_container">
-		<h2>Welcome to My Chat App! </h2>
-		<button onClick={signIn}>Sign In With Google</button>
-		</div>
-
+			<div className="login_container">
+				<div className="loginButton" onClick={signIn}>
+					<span>Sign In With Google</span>
+					<i></i>
+				</div>
+			</div>
 		</div>
 
 		)

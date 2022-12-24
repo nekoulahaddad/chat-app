@@ -1,7 +1,7 @@
 .Sidebar{
 	display: flex;
 	flex-direction: column;
-	flex:0.35; /* it used for the side bar to take 35% of the width   */
+	flex:0.35;
 	background-color: #ffffff;
 	border-right: 1px solid lightgray;
 }
@@ -11,7 +11,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding:20px;
-	max-height: 20px;
+	max-height: 50px;
 	background-color:#dcf8c6;
 }
 
@@ -21,6 +21,15 @@
 }
 
 .profileImg{
-	height: 30px;
-	width: 30px;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+}
+.useInfo{
+	display: flex;
+	align-items: center;
+}
+.userName{
+    font-weight: bold;
+    margin-left: 20px;
 }
