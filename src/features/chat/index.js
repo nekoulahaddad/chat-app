@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
-import "./Chat.css";
-import { useParams } from "react-router-dom";
-import db from "./firebase";
 import firebase from "firebase";
-import { useStateValue } from "./StateProvider";
+import { useParams } from "react-router-dom";
 import ScrollToBottom from "react-scroll-to-bottom";
+
+import db from "../../utils/firebase";
+import { useStateValue } from "../../StateProvider";
+
+import "./styles.css";
+
 function Chat() {
   const [input, setInput] = useState("");
   const { roomId } = useParams();
   const [roomName, setRoomName] = useState("");
   const [messages, setMessages] = useState([]);
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
     if (roomId) {

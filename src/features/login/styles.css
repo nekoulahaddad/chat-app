@@ -1,0 +1,82 @@
+.login {
+  display: grid;
+  place-items: center;
+  background-color: #ededed;
+  height: 90vh;
+  width: 90vw;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
+}
+
+.loginButton {
+  cursor: pointer;
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  padding: 0.75rem 1.5rem;
+  transition: 0.5s;
+  --color: rgb(0, 237, 100);
+}
+
+.loginButton:hover {
+  background: var(--color);
+  color: var(--color);
+  box-shadow: 0 0 50px 10px var(--color);
+}
+
+.loginButton::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+
+.loginButton span {
+  position: relative;
+  z-index: 1;
+}
+
+.loginButton i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.loginButton i::before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid var(--color);
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.loginButton:hover i::before {
+  left: 20%;
+  width: 20px;
+}
+
+.loginButton i::after {
+  content: "";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid var(--color);
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.loginButton:hover i::after {
+  left: 80%;
+  width: 20px;
+}

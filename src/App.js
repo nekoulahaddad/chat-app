@@ -1,16 +1,18 @@
 import React from "react";
-import "./App.css";
-import Sidebar from "./Sidebar.js";
-import Chat from "./Chat.js";
-import Login from "./Login.js";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useStateValue } from "./StateProvider";
 import {
   faUser,
   faCheckSquare,
   faCoffee,
 } from "@fortawesome/free-solid-svg-icons";
+
+import Sidebar from "./components/sidebar";
+import Chat from "./features/chat";
+import Login from "./features/login";
+import { useStateValue } from "./StateProvider";
+
+import "./App.css";
 
 library.add(faUser, faCheckSquare, faCoffee);
 

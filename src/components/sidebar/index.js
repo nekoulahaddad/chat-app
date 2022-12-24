@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "./Sidebar.css";
-import SidebarChat from "./SidebarChat";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import db from "./firebase";
-import { useStateValue } from "./StateProvider";
+
+import SidebarChat from "./sidebarChat";
+import db from "../../utils/firebase";
+import { useStateValue } from "../../StateProvider";
+
+import "./styles.css";
 
 function Sidebar() {
   const [rooms, setRooms] = useState("");
